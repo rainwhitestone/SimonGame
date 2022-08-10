@@ -84,9 +84,7 @@ function checkAnswer(currentLevel) {
       $("body").removeClass("game-over");
     }, 250);
 
-  $("h1").text(
-      `Game over, your score is ${level - 1}! Press any key to restart :(`
-    );    
+  $("h1").text(`Game over, your score was ${level - 1}! Press any key to restart :(` );    
     started = false;
     level = 0;
     userClickedPattern = [];
