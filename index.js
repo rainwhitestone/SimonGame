@@ -21,6 +21,14 @@ var level = 0;
 
 //------------------------------------------------------------------------
 
+$(".start-btn").click(function () {
+  if (!started && level === 0) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+});
+
 function nextSequence() {
   userClickedPattern = [];
   level++;
